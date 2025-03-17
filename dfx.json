@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "OrganDonation_backend": {
+      "main": "src/OrganDonation_backend/main.mo",
+      "type": "motoko"
+    },
+    "OrganDonation_frontend": {
+      "dependencies": [
+        "OrganDonation_backend"
+      ],
+      "source": [
+        "src/OrganDonation_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "OrganDonation_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
